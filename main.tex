@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{titletoc}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{changepage}
+\usepackage{wrapfig}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={190mm,260mm},
+	left=10mm,
+	top=10mm,
+}
+
+
+\usepackage{pgf}
+\usepackage{pgfpages}
+
+\pgfpagesdeclarelayout{boxed}
+{
+	\edef\pgfpageoptionborder{0pt}
+}
+{
+	\pgfpagesphysicalpageoptions
+	{%
+		logical pages=1,%
+	}
+	\pgfpageslogicalpageoptions{1}
+	{
+		border code=\pgfsetlinewidth{1pt}\pgfstroke,%
+		border shrink=\pgfpageoptionborder,%
+		resized width=1.0\pgfphysicalwidth,%
+		resized height=1.0\pgfphysicalheight,%
+		center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+	}%
+}
+
+\pgfpagesuselayout{boxed}
+
+\title{GWS}
+\author{ingeanus \& Shuzzbutt}
+\date{December 2022 (Ver 0.1)}
+
+\begin{document}
+	
+	\maketitle
+	
+	\tableofcontents
+	
+	\newpage
+	\input{model_design}
+	
+	\newpage
+	\input{weapon_design}
+	
+	\newpage
+	\input{hot_tub_hints}
+		
+\end{document}

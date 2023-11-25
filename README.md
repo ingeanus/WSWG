@@ -1,1 +1,2 @@
-# GWS
+# WSWG System
+## WySiwyg WarGaming System

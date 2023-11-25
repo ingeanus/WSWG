@@ -1,2 +1,2 @@
 # WSWG System
-## WySiwyg WarGaming System
+## **What** you **See** is what you get **War** **Gaming** System
